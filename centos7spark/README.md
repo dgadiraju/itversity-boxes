@@ -17,6 +17,8 @@ Here are the instructions to start the services.
 
 * HDFS - `start-dfs.sh`
 * YARN - `start-yarn.sh`
+* You can run `jps` to see all the relevant processes running.
+* You can also run `hdfs dfs -ls /user/vagrant` to confirm HDFS is up and running.
 
 ## Spark - Getting Started
 
