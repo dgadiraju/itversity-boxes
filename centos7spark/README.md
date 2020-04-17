@@ -20,6 +20,17 @@ Here are some of the usages of the Virtual Machine.
 
 In case you don't have enough resources to practice, you can sign up for our [labs](https://labs.itversity.com).
 
+## Starting Virtual Machine
+
+Here are the instructions to start Virtual Machine.
+
+* Make sure you are inside the folder `centos7spark`.
+* Run `vagrant up` to bring up the Virtual Machine.
+* You can connect to Virtual Machine by saying `vagrant ssh`.
+* By default you will be logged in as user `vagrant`.
+* Most of the stuff in the virtual machine are owned by `vagrant`.
+* `vagrant` can sudo as root and can perform any task in the virtual machine.
+
 ## Starting Services
 
 Here are the instructions to start the services.
@@ -28,6 +39,17 @@ Here are the instructions to start the services.
 * YARN - `start-yarn.sh`
 * You can run `jps` to see all the relevant processes running.
 * You can also run `hdfs dfs -ls /user/vagrant` to confirm HDFS is up and running.
+
+## Stopping Virtual Machine
+
+Here are the instructions to stop the virtual machine.
+
+* You need to make sure that all the services are gracefully stopped.
+  * HDFS - `stop-dfs.sh`
+  * YARN - `stop-yarn.sh`
+* You can validate by running `jps`, it should list any of the HDFS or YARN Components.
+* You can come out of the virtual machine by running `exit` command.
+* Once you are back to `centos7spark` folder, you can say `vagrant halt` to bring down the virtual machine.
 
 ## Using retail_db dataset
 
