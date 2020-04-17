@@ -20,6 +20,39 @@ Here are the instructions to start the services.
 * You can run `jps` to see all the relevant processes running.
 * You can also run `hdfs dfs -ls /user/vagrant` to confirm HDFS is up and running.
 
+## Using retail_db dataset
+
+As part of the virtual machine the data is made available in local file system of Virtual Machine.
+
+* Location: `/data/retail_db`.
+* We can copy `/data/retail_db` into HDFS location `/public` by saying `hdfs dfs -put /data/retail_db /public`.
+* You can validate by running `hdfs dfs -ls /public/retail_db`. You should start seeing the folders related to retail_db such as **orders**, **order_items** etc.
+
+## Launching Jupyter Lab
+
+Lab is setup with Jupter Lab with following Kernels.
+
+* Python 3
+* Pyspark 2
+* Apache Toree - Scala (Spark)
+* Apache Toree - SQL (Spark SQL)
+
+Here are the instructions to run jupyter lab.
+
+* Run `jupyter lab --ip 0.0.0.0`
+* Go to the browser and enter - `http://localhost:8888`
+* Copy the Token that is generated on the terminal in the login page and login.
+* You will see bare minimum content to begin with.
+
+## Accessing Content
+
+On top of providing Virtual Machine we are also planning to open source our high quality content. Here are the instructions to clone it in the Virtual Machine.
+
+* Make sure you are in the virtual machine under `/home/vagrant`.
+* If you run `ls -ltr` you will see a folder by name `itversity-books`.
+* You can get into the folder by running `cd itversity-books`.
+* Run `git pull` to get latest content as of date. Keep in mind that it might replace existing books, if you made any changes.
+
 ## Spark - Getting Started
 
 TBD
