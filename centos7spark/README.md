@@ -11,6 +11,15 @@ Here are the technologies that are setup on this virtual machine.
 * Hadoop 3.2.1
 * Spark 2.4.5
 
+## Usages
+
+Here are some of the usages of the Virtual Machine.
+
+* Learn Spark using Jupyter Lab environment.
+* Prepare for CCA 175 Spark and Hadoop Developer Certification using Python or Scala.
+
+In case you don't have enough resources to practice, you can sign up for our [labs](https://labs.itversity.com).
+
 ## Starting Services
 
 Here are the instructions to start the services.
