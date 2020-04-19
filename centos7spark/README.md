@@ -75,7 +75,16 @@ Here are the instructions to run jupyter lab.
 * Copy the Token that is generated on the terminal in the login page and login.
 * You will see bare minimum content to begin with.
 
-## Accessing Content
+## Using Content from GitHub
+
+At ITVersity, we not only provide Virtual Machine, we also provide content to practice. Here are the details about using the content to practice Spark especialy for CCA 175.
+
+* Click [here](https://github.com/dgadiraju/itversity-books/) to visit official repository for all ITVersity Notebooks.
+* Visit appropriate folders and click on the Notebook.
+* Once the Notebook is opened you can copy paste the code into the virtual machine or any other environment you want to practice.
+* Keep in mind that you might have to make some adjustments such as using appropriate paths of your environment to access the data.
+
+## Accessing Content Locally
 
 On top of providing Virtual Machine we are also planning to open source our high quality content. Here are the instructions to clone it in the Virtual Machine.
 
